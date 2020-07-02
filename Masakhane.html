@@ -69,11 +69,18 @@
             <p>
               <img src="images/image_3.jpg" alt="" class="img-fluid">
             </p>
-            <p>I am currently working on Kiswahili and Kikuyu Language models. This task involves data collection, cleaning, pre processing, and the training of a baseline Machine Translation model.
+            <p>I am currently working on Kiswahili and Kikuyu Language models. This task involves data collection, cleaning, pre processing, and the training of a baseline Machine Translation model.<p/>
 
-              So far, I have trained a transformer model for English - Kiswahili translation, using the SAWA corpus. SAWA is a parallel English - Kiswahili corpus made up of 542.1 k English words and 442.9 k Swahili words.
+             <p> So far, I have trained a transformer model for English - Kiswahili translation, using the SAWA corpus. SAWA is a parallel English - Kiswahili corpus made up of 542.1 k English words and 442.9 k Swahili words.
+               Here is a link to the work (https://github.com/Freshia/Kiswahili_MT). 
+               The test scores on this model were quite low, given that the model was tested against a test set built from JW300 data, which is bibilical text.
+             </p>
 
-              Given the agglutinative nature of Swahili language, I used Byte Pair encoding (BPE), in an attempt to improve the model accuracy.
+             <p>This led me to create another test set, from data randomly selected from a combination of JW300 corpus and SAWA Corpus.
+                I then trained another transformer model that combined data from the two corpora (SAWA and JW300), and tested it against the custom test set.
+              This model recorded much higher BLEU scores than the previous model. Here is a link to the wokr (https://github.com/Freshia/sawa_jw_MT)</p>
+
+             <p> Given the agglutinative nature of Swahili language, I used Byte Pair encoding (BPE), in an attempt to improve the model accuracy.
               BLEU scores were used as the evaluation metric.
             </p>
             
